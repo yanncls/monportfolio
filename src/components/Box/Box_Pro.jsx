@@ -1,4 +1,10 @@
 import ButtonPro from "../Button/ButtonPro";
+import Booki from "../../images/booki.png";
+import Ohmyfood from "../../images/ohmyfood.png";
+import Chouette from "../../images/chouette.png";
+import Kanap from "../../images/kanap.png";
+import Piquante from "../../images/piquante1.png";
+import Groupomania from "../../images/groupomania.png";
 
 export default function BoxPro() {
   return (
@@ -10,8 +16,8 @@ export default function BoxPro() {
         <div className="pro_content">
           <div className="pro_block">
             <div className="pro_block-display">
-              <a href="/images/booki.png">
-                <img src="/images/booki.png" alt="booki" />
+              <a href={Booki}>
+                <img src={Booki} alt="booki" />
               </a>
               <div className="pro_block-txt">
                 <h3>Booki</h3>
@@ -38,15 +44,14 @@ export default function BoxPro() {
                   <ButtonPro />
                 </a>
               </div>
-              <a href="/images/ohmyfood.png">
-                <img src="/images/ohmyfood.png" alt="ohmyfood" />
+              <a href={Ohmyfood}>
+                <img src={Ohmyfood} alt="ohmyfood" />
               </a>
             </div>
             <div className="pro_block-display">
-              <a href="/images/chouette.png">
-                <img src="/images/chouette.png" alt="chouette" />
+              <a href={Chouette}>
+                <img src={Chouette} alt="chouette" />
               </a>
-
               <div className="pro_block-txt">
                 <h3>La Chouette Agence</h3>
                 <p>
@@ -70,15 +75,14 @@ export default function BoxPro() {
                   <ButtonPro />
                 </a>
               </div>
-              <a href="/images/ohmyfood.png">
-                <img src="/images/ohmyfood.png" alt="ohmyfood" />
+              <a href={Kanap}>
+                <img src={Kanap} alt="kanap" />
               </a>
             </div>
             <div className="pro_block-display">
-              <a href="/images/piquante1.png">
-                <img src="/images/piquante1.png" alt="piquante" />
+              <a href={Piquante}>
+                <img src={Piquante} alt="piquante" />
               </a>
-
               <div className="pro_block-txt">
                 <h3>Piquante</h3>
                 <p>
@@ -101,8 +105,8 @@ export default function BoxPro() {
                   <ButtonPro />
                 </a>
               </div>
-              <a href="/images/groupomania.png">
-                <img src="/images/groupomania.png" alt="ohmyfood" />
+              <a href={Groupomania}>
+                <img src={Groupomania} alt="groupomania" />
               </a>
             </div>
           </div>

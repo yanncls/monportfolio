@@ -4,17 +4,21 @@ export default function Footer() {
       <div>
         <div>
           <a href="https://www.linkedin.com/in/yann-julien-cleonis-886749a2/">
-            <img src="images/link.svg" alt="link" />
+            <img src={require("../../images/link.svg").default} alt="link" />
           </a>
         </div>
         <div>
           <a href="https://github.com/yanncls">
-            <img src="images/git.svg" alt="git" className="git" />
+            <img
+              src={require("../../images/git.svg").default}
+              alt="git"
+              className="git"
+            />
           </a>
         </div>
         <div>
           <a href="mailto:cleonisyann@icloud.com">
-            <img src="images/gmail.svg" alt="mail" />
+            <img src={require("../../images/gmail.svg").default} alt="mail" />
           </a>
         </div>
       </div>
