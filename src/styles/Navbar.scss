@@ -1,0 +1,162 @@
+@use "_colors.scss";
+
+.nav {
+  background-color: colors.$backgroundLight;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  scroll-snap-align: start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  a {
+    font-weight: 200;
+    margin-left: 2rem;
+    text-decoration: none;
+  }
+  a,
+  a:visited,
+  a:active {
+    color: black;
+    font-weight: bold;
+  }
+  a:hover {
+    color: colors.$alternative;
+    transform: scale(1.1);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.nav_links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Link {
+  position: absolute;
+  right: 20px;
+}
+
+.shutdown {
+  width: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #faf7f0ed;
+  top: 0;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a {
+      text-decoration: none;
+    }
+    a,
+    a:visited,
+    a:active {
+      color: black;
+      font-weight: bold;
+    }
+    a:hover {
+      color: colors.$alternative;
+      transform: scale(1.3);
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}
+
+.navbar_links {
+  display: flex;
+}
+
+.navbar_link {
+  padding: 0 0.3rem;
+  color: inherit;
+}
+
+.navbar_burger {
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: inherit;
+  background: transparent;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    background-color: #faf7f057;
+  }
+  .navbar_links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: -100vw;
+    visibility: hidden;
+    bottom: 0;
+    height: 100vh;
+    padding: 2rem;
+    background-color: colors.$tertiary;
+  }
+  .show-nav .navbar_links {
+    right: 0;
+    visibility: visible;
+    width: 100vw;
+  }
+  .navbar_link {
+    display: block;
+    padding: 1.5rem;
+    font-size: 5vw;
+  }
+  .navbar_burger {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  .navbar_burger:hover {
+    cursor: pointer;
+  }
+  .burger-bar,
+  .burger-bar::before,
+  .burger-bar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: black;
+    transition: all 0.5s ease-in-out;
+  }
+  .burger-bar::before,
+  .burger-bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burger-bar::before {
+    transform: translateY(-12px);
+  }
+  .burger-bar::after {
+    transform: translateY(-22px);
+  }
+  .show-nav .burger-bar::before {
+    transform: rotate(45deg);
+  }
+  .show-nav .burger-bar::after {
+    transform: rotate(-45deg);
+  }
+  .show-nav .burger-bar {
+    width: 0;
+    background: transparent;
+  }
+}

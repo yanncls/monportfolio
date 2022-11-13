@@ -1,0 +1,109 @@
+@use "_colors.scss";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  // background-color: colors.$tertiary;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  .home-link {
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+    background-color: colors.$secondary;
+  }
+}
+
+.App-link {
+  color: colors.$backgroundDark;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  height: 10rem;
+  p {
+    margin: 2rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    :hover {
+      transform: scale(1.1);
+    }
+    img {
+      width: 3.8rem;
+    }
+  }
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.alt {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  height: 10rem;
+  background-color: colors.$tertiary;
+  p {
+    margin: 2rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    img {
+      width: 3.8rem;
+    }
+  }
+  div {
+    display: flex;
+    align-items: center;
+  }
+}
+
+h2 {
+  margin: 0;
+}
+
+.git {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.planet {
+  width: 20rem;
+}
+
+.welcome {
+  font-size: xx-large;
+}
