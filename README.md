@@ -1,4 +1,4 @@
 # Mon portfolio
 
-Découvrez le en live juste ici : [Mon app web](https://yanncls.github.io/portfolio/).
+Découvrez le juste ici : [Mon portfolio](https://yanncls.github.io/monportfolio/).
 # monportfolio
